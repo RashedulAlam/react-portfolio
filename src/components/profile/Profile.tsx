@@ -4,7 +4,7 @@ import AboutMe from "./AboutMe";
 
 const Profile = () => {
   return (
-    <div className="flex flex-col flex-nowrap">
+    <div className="flex flex-col flex-nowrap gap-16">
       <AboutMe />
       <div className="flex flex-row">
         <WorkHistory />

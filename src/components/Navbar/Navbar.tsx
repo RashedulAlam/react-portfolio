@@ -21,12 +21,20 @@ const Navbar = ({ navItems = [] }: INavbarProps) => {
          py-5
          md:py-5
          px-4
-         text-lg text-gray-700
-         bg-white
-       "
+         text-lg text-gray-700"
       >
         <div>
-          <a href="#">Rashedul Alam</a>
+          <a
+            href="/about"
+            className="cursor-pointer
+              rounded-md border
+            border-gray-200
+              px-2.5 text-3xl
+              uppercase
+              transition-all duration-500"
+          >
+            Rashedul Alam
+          </a>
         </div>
 
         <svg
