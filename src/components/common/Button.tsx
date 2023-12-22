@@ -2,10 +2,9 @@ import React from "react";
 import { tv } from "tailwind-variants";
 
 export interface IButtonProps {
-  type: "button" | "submit" | "reset" | undefined;
-  varient: string;
-  label: string;
-  onClick: () => {};
+  type?: "button" | "submit" | "reset" | undefined;
+  label?: string;
+  onClick?: () => {};
   size?: "md" | "lg" | "sm";
   color?: "primary" | "secondary";
 }
@@ -36,7 +35,7 @@ const button = tv({
 });
 
 const Button = ({
-  label,
+  label = "Button",
   onClick,
   type = "button",
   size = "sm",
