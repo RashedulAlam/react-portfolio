@@ -15,9 +15,9 @@ const AboutMe = () => {
       </div>
       <div className="flex flex-col flex-1 gap-5">
         <p>
-          Hi! I'm <strong>Rashedul Alam</strong>, a Full Stack Developer.I have
-          been working and developing new things as a web and software developer
-          for the more than 6 years.
+          Hi! I&apos;m <strong>Rashedul Alam</strong>, a Full Stack Developer.I
+          have been working and developing new things as a web and software
+          developer for the more than 6 years.
         </p>
 
         <p>
@@ -33,23 +33,24 @@ const AboutMe = () => {
         </p>
 
         <p>
-          When I'm not in front of the computer, you can find me kicking a{" "}
-          <strong>football or playing cricket</strong>. It's not just about
-          winning; it's about teamwork, having a strategy, and not giving up
-          when things get tough.
+          When I&apos;m not in front of the computer, you can find me kicking a{" "}
+          <strong>football or playing cricket</strong>. It&apos;s not just about
+          winning; it&apos;s about teamwork, having a strategy, and not giving
+          up when things get tough.
         </p>
         <p>
           <strong>
-            "Keep trying, even when it's hard. Passion is like a superpower, and
-            sticking with it makes you excellent."
+            &ldquo;Keep trying, even when it&apos;s hard. Passion is like a
+            superpower, and sticking with it makes you excellent.&ldquo;
           </strong>{" "}
           This saying reminds me that loving what you do and not giving up, even
-          when it's tough, is the secret to becoming really good at it.
+          when it&apos;s tough, is the secret to becoming really good at it.
         </p>
         <p>
-          If you want someone on your team who's not only good with computers
-          but also brings a lot of excitement and never-give-up attitude, let's
-          chat and see what awesome things we can create together!
+          If you want someone on your team who&apos;s not only good with
+          computers but also brings a lot of excitement and never-give-up
+          attitude, let&apos;s chat and see what awesome things we can create
+          together!
         </p>
       </div>
     </div>

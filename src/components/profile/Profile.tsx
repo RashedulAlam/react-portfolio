@@ -1,6 +1,6 @@
 import React from "react";
-import WorkHistory from "./workHistory";
 import AboutMe from "./AboutMe";
+import WorkHistory from "./WorkHistory";
 
 const Profile = () => {
   return (
