@@ -2,15 +2,15 @@ import { INavItem } from "@/components/Navbar/Navbar";
 
 export const NAV_ITEMS: INavItem[] = [
   {
-    label: "Project",
-    url: "#",
+    label: "Projects",
+    url: "/projects",
   },
   {
     label: "About Me",
-    url: "",
+    url: "/about",
   },
   {
     label: "Contact",
-    url: "",
+    url: "/contact",
   },
 ];

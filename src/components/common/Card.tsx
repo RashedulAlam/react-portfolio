@@ -1,7 +1,24 @@
 import React from "react";
-import Button from "./Button";
 
-const Card = () => {
+export interface ICardProps {
+  title: string;
+  description: string;
+  techStack: string[];
+  roles: string[];
+  images: string[];
+  client: string;
+  notableContributions: string[];
+}
+
+const Card = ({
+  client,
+  description,
+  images,
+  notableContributions,
+  roles,
+  techStack,
+  title,
+}: ICardProps) => {
   return (
     <div className="rounded-lg bg-white shadow-sm p-7 text-center sm:max-w-sm sm:p-4 sm:pb-12">
       <img
@@ -11,18 +28,11 @@ const Card = () => {
       />
       <div>
         <h2 className="text-gray-800 capitalize text-xl font-bold pt-8 pb-4">
-          fire up your motivation
+          {title}
         </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer in
-          sapien. Nullam dapibus fermentum ipsum. Class aptent taciti sociosqu.
-        </p>
-        by{" "}
-        <a href="#" className="capitalize underline inline-block pt-3">
-          kyle patterson
-        </a>
+        <p>{description}</p>
         <button className="block bg-gray-900 text-white rounded-lg py-4 px-16 mx-auto mt-8 tracking-wide">
-          Read article
+          Read More
         </button>
       </div>
     </div>

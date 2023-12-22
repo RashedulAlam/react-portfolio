@@ -3,7 +3,7 @@ import Card from "@/components/common/Card";
 import Profile from "@/components/profile/Profile";
 import Project from "@/components/project/Project";
 
-export default function Home() {
+export default function About() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* <Project />
@@ -12,8 +12,8 @@ export default function Home() {
           <Card key={i} />
         ))}
       </div> */}
-      {/* <Profile /> */}
-      <Project />
+      <Profile />
+      {/* <Project /> */}
     </main>
   );
 }
