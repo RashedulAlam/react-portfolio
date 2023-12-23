@@ -11,11 +11,10 @@ export interface IProfileProps {
   workHistories: ITimeline[];
 }
 
-const Profile = ({ aboutMe, workHistories }: IProfileProps) => {
+const Profile = () => {
   return (
     <div className="flex flex-col flex-nowrap gap-16">
       <AboutMe {...config.PROFILE.aboutMe} />
-      {/* <AboutMe {...aboutMe} /> */}
       <div className="flex flex-row">
         <WorkHistory workHistories={config.PROFILE.workHistories} />
       </div>

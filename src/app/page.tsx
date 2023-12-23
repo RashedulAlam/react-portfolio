@@ -1,7 +1,7 @@
 import Button from "@/components/common/Button";
 import Card from "@/components/common/Card";
 import Profile from "@/components/profile/Profile";
-import Project from "@/components/project/Project";
+import Project from "@/components/project/Projects";
 
 export default function Home() {
   return (

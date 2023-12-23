@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 export interface ICardProps {
+  id: string;
   title: string;
   description: string;
   techStack: string[];
@@ -10,11 +11,22 @@ export interface ICardProps {
   client: string;
   notableContributions: string[];
   tags: string[];
+  onClick?: (id: string) => void;
 }
 
-const Card = ({ description, title, tags, titleImage }: ICardProps) => {
+const Card = ({
+  id,
+  description,
+  title,
+  tags,
+  titleImage,
+  onClick,
+}: ICardProps) => {
   return (
-    <div className="rounded-lg bg-white shadow-lg p-7 text-center sm:max-w-sm sm:p-4 sm:pb-12 cursor-pointer min-w-96">
+    <div
+      className="rounded-lg bg-white shadow-lg p-7 text-center sm:max-w-sm sm:p-4 sm:pb-12 cursor-pointer min-w-96"
+      onClick={() => onClick && onClick(id)}
+    >
       <Image
         src={titleImage}
         alt="project product image"
