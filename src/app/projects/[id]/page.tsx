@@ -5,7 +5,11 @@ import { PROJECTS } from "@/config/projects";
 const ProjectDetails = ({ params }: { params: { id: string } }) => {
   const project = PROJECTS.find((x) => x.id == params?.id);
 
-  return <div>{project && <ProjectDetail.default {...project} />}</div>;
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      {project && <ProjectDetail.default {...project} />}
+    </main>
+  );
 };
 
 export default ProjectDetails;
