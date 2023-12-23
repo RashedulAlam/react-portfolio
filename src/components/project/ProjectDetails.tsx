@@ -1,11 +1,28 @@
 import Image from "next/image";
 import React from "react";
 
-const ProjectDetails = () => {
+export interface IProjectDetailsProps {
+  title: string;
+  description: string;
+  techStack: string[];
+  roles: string[];
+  images: string[];
+  client: string;
+  detailsDescription: string;
+  [key: string]: any;
+}
+
+const ProjectDetails = ({
+  title,
+  client,
+  detailsDescription,
+  images,
+  techStack,
+}: IProjectDetailsProps) => {
   return (
     <div className="flex flex-col gap-14">
       <div className="flex flex-col gap-5">
-        <h1 className="text-left text-7xl font-bold">Geodash</h1>
+        <h1 className="text-left text-7xl font-bold">{title}</h1>
         <div className="flex flex-row">
           <div className="flex items-center mr-10">
             <svg
@@ -46,27 +63,16 @@ const ProjectDetails = () => {
         </div>
       </div>
       <div className="flex flex-row gap-10 justify-between">
-        <Image
-          src="/geodash/1.png"
-          alt="project image"
-          height={600}
-          width={400}
-          className="rounded-lg"
-        />
-        <Image
-          src="/geodash/2.png"
-          alt="project image"
-          height={400}
-          width={400}
-          className="rounded-lg"
-        />
-        <Image
-          src="/geodash/3.png"
-          alt="project image"
-          height={400}
-          width={400}
-          className="rounded-lg"
-        />
+        {images.map((image, index) => (
+          <Image
+            key={`image-${index}`}
+            src={image}
+            alt="project image"
+            height={600}
+            width={400}
+            className="rounded-lg"
+          />
+        ))}
       </div>
       <div className="flex flex-row justify-between gap-20">
         <div className="flex flex-col basis-1/2">
@@ -75,42 +81,21 @@ const ProjectDetails = () => {
               Client
             </h2>
             <ul className="leading-loose">
-              <li className="font-general-regular">Name: World Bank</li>
+              <li className="font-general-regular">Name: {client}</li>
             </ul>
           </div>
           <div className="flex flex-col">
             <h2 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
               Tools & Technologies
             </h2>
-            <div>
-              ASP.NET Core, EF Core, Angular, SQL Server, PostgreSQL, SQLite,
-              MongoDB, Docker, Kubernetes, Hangfire, RabbitMQ, Redis, AWS, Unit
-              Test, BDD Test, Identity Server 4, GitLab, CI/CD, Jira, Scrum,
-              Agile, Jesmine, Karma
-            </div>
+            <div>{techStack}</div>
           </div>
         </div>
         <div className="flex flex-col basis-1/2">
           <h2 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
             Project Description
           </h2>
-          <div>
-            GeoDASH is an integrated mapping platform developed on an open
-            source OGC compliant map server application, called GeoServer, with
-            a related Content Management Service (CMS) built on the open source
-            GeoNode platform. The platform is integrated into the government
-            infrastructure and is also available for public use. The system has
-            been redesigned and its functionalities upgraded for optimization
-            and better performance; to meet the requirements of the
-            organizations, which actively use the platform for storing their GIS
-            data as well as sharing information. Features: Create custom and
-            stylish maps using single or multiple layers, Role management,
-            Interoperability capabilities, Import and export layer data, modify
-            metadata, Integrated Map Tools (e.g. Routing, BBOX search and so
-            on), Coordinate view, elevation, address and reverse geocoding,
-            Print maps with data and base maps, Map analytics (e.g. map loads,
-            pan, zoom, etc.)
-          </div>
+          <div>{detailsDescription}</div>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 export const PROJECTS = [
   {
+    id: "1",
     title: "Orchestrated Analytics",
     description: "Data Analytics SaaS Solution",
     techStack: [
@@ -21,6 +22,7 @@ export const PROJECTS = [
     detailsDescription: `A platform that provides analytical dashboard from an ETL process. The system can load data from various sources (SQL Server, Snowflake etc.) With a collection of charts and themes the system can be easily configurable with a very a short time. In mobile application, user can download offline databases to visualize dashboard in offline as well as can see live dashboard in online. It provides data security, data preferences and policy-based access control on permission and restriction across all applications`,
   },
   {
+    id: "2",
     title: "Stargate",
     description: "CMS Marketing Portal",
     techStack: [
@@ -39,6 +41,7 @@ export const PROJECTS = [
     detailsDescription: `Client Marketing Portal. Translation and contents are configured on CMS. Client can easily configure new page from already development component library and publish the page online`,
   },
   {
+    id: "3",
     title: "GeoDash",
     description: "GIS Solution",
     techStack: ["GeoNode, OpenLayer 3.0, Leaflet, Python, Django, AngularJs"],
@@ -52,6 +55,7 @@ export const PROJECTS = [
       "GeoDASH is an integrated mapping platform developed on an open source OGC compliant map server application, called GeoServer, with a related Content Management Service (CMS) built on the open source GeoNode platform. The platform is integrated into the government infrastructure and is also available for public use. The system has been redesigned and its functionalities upgraded for optimization and better performance; to meet the requirements of the organizations, which actively use the platform for storing their GIS data as well as sharing information. Features: Create custom and stylish maps using single or multiple layers, Role management, Interoperability capabilities, Import and export layer data, modify metadata, Integrated Map Tools (e.g. Routing, BBOX search and so on), Coordinate view, elevation, address and reverse geocoding, Print maps with data and base maps, Map analytics (e.g. map loads, pan, zoom, etc.)",
   },
   {
+    id: "4",
     title: "NSDI",
     description: "GIS Solution",
     techStack: ["GeoNode, OpenLayer 3.0, Leaflet, Python, Django, AngularJs"],
@@ -65,6 +69,7 @@ export const PROJECTS = [
       "National Spatial Data Infrastructure (NSDI) is an integrated database system of geospatial information and maps where all valuable mapping information and geospatial information will be stored by different agencies under unified specifications. Through role-based access all members can access and utilize all information in the database in a secured way for various kinds of public activities. NSDI prototype system (NSDI-PS) is a web portal to evaluate the function and efficiency of NSDI. The system consists of a server system which distributes geospatial data along with digital base maps and a web portal site to provide secured access to the server system for NSDI users. Features: Create map using single or multiple layers Create custom and stylish maps, Integrated Map Tools (e.g. Routing, BBOX search and so on), Coordinate view, elevation, address and reverse geocoding, Cross-layer buffer search, Print high quality map, Map analytics (e.g. map loads, pan, zoom and so on), Role Management, Access monitoring",
   },
   {
+    id: "5",
     title: "STREAM",
     description: "Results and Evidence Management",
     techStack: [""],
@@ -82,6 +87,7 @@ export const PROJECTS = [
       "System for Tracking Results and Evidence for Adoptive Management (STREAM) creates a comprehensive framework for continuous Monitoring and Evaluation (M&E) process through routine checking and assessment, census survey, inventory overviews and management. Functions such as demographic pro ling, managing commodity distribution, cash transfer, inventory management, complaint management system and smart card feature are incorporated into the system in addition to basic M&E functions. Features: Integrated MIS and GIS, Dynamic dashboard creation and sharing with different level of permission, Household census, dynamic reporting and visualization tools, Real-time data synchronization, Import and export documents and images, Role-based access, Inter-organizational data sharing and collaborative platform. ",
   },
   {
+    id: "6",
     title: "DU Community Commerce",
     description: "Community E-Commerce",
     techStack: [
@@ -93,8 +99,10 @@ export const PROJECTS = [
     notableContributions: [],
     tags: ["GIS based community e commerce"],
     titleImage: "/ducc/1.png",
+    detailsDescription: "",
   },
   {
+    id: "7",
     title: "Loence ERP",
     description: "ERP Software",
     techStack: ["NodeJs, Angular 2, MongoDB"],
@@ -108,5 +116,6 @@ export const PROJECTS = [
     notableContributions: [],
     tags: ["Web Application"],
     titleImage: "/no-image-warning/client-site.png",
+    detailsDescription: "",
   },
 ];
