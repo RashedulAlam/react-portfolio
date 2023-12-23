@@ -14,7 +14,7 @@ export interface IProfileProps {
 
 const Profile = () => {
   return (
-    <div className="flex flex-col flex-nowrap gap-16">
+    <div className="flex flex-col gap-16">
       <AboutMe {...config.PROFILE.aboutMe} />
       <WorkHistory workHistories={config.PROFILE.workHistories} />
       <Social items={config.PROFILE.socialNetworks} />

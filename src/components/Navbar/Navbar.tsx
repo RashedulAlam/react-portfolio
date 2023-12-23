@@ -27,13 +27,14 @@ const Navbar = ({ navItems = [] }: INavbarProps) => {
           <a
             href="/about"
             className="cursor-pointer
-              rounded-md border
-            border-gray-200
+              rounded-md 
               px-2.5 text-3xl
               uppercase
-              transition-all duration-500"
+              hover: underline-offset-4
+              hover:underline
+              "
           >
-            Rashedul Alam
+            <span className="text-5xl text-blue-600 font-bold border-spacing-2 text-center p-2">R</span>Alam
           </a>
         </div>
 
