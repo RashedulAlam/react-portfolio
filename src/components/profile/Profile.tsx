@@ -1,13 +1,22 @@
+'use client'
 import React from "react";
-import AboutMe from "./AboutMe";
+import AboutMe, { IAboutMeProps } from "./AboutMe";
 import WorkHistory from "./WorkHistory";
+import * as config from "../../config/profile";
+import { ITimeline } from "../common/Timeline";
+import Location from "./Location";
+
+export interface IProfileProps {
+  aboutMe: IAboutMeProps;
+  workHistories: ITimeline[];
+}
 
 const Profile = () => {
   return (
     <div className="flex flex-col flex-nowrap gap-16">
-      <AboutMe />
+      <AboutMe {...config.PROFILE.aboutMe} />
       <div className="flex flex-row">
-        <WorkHistory />
+        <WorkHistory workHistories={config.PROFILE.workHistories} />
       </div>
     </div>
   );

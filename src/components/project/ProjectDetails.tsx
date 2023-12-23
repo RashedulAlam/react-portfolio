@@ -1,11 +1,28 @@
 import Image from "next/image";
 import React from "react";
 
-const ProjectDetails = () => {
+export interface IProjectDetailsProps {
+  title: string;
+  description: string;
+  techStack: string[];
+  roles: string[];
+  images: string[];
+  client: string;
+  detailsDescription: string;
+  [key: string]: any;
+}
+
+const ProjectDetails = ({
+  title,
+  client,
+  detailsDescription,
+  images,
+  techStack,
+}: IProjectDetailsProps) => {
   return (
     <div className="flex flex-col gap-14">
       <div className="flex flex-col gap-5">
-        <h1 className="text-left text-7xl font-bold">Geodash</h1>
+        <h1 className="text-left text-7xl font-bold">{title}</h1>
         <div className="flex flex-row">
           <div className="flex items-center mr-10">
             <svg
@@ -45,51 +62,41 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-20 flex-wrap">
-        <Image
-          src="/geodash/1.png"
-          alt="project image"
-          height={600}
-          width={400}
-          className="rounded-lg"
-        />
-        <Image
-          src="/geodash/2.png"
-          alt="project image"
-          height={400}
-          width={400}
-          className="rounded-lg"
-        />
-        <Image
-          src="/geodash/3.png"
-          alt="project image"
-          height={400}
-          width={400}
-          className="rounded-lg"
-        />
+      <div className="flex flex-row gap-10 justify-between">
+        {images.map((image, index) => (
+          <Image
+            key={`image-${index}`}
+            src={image}
+            alt="project image"
+            height={600}
+            width={400}
+            className="rounded-lg"
+          />
+        ))}
       </div>
-      <div className="flex flex-row justify-between">
-        <div className="flex flex-col">
+      <div className="flex flex-row justify-between gap-20">
+        <div className="flex flex-col basis-1/2">
           <div className="mb-7">
-            <p className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
+            <h2 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
               Client
-            </p>
+            </h2>
             <ul className="leading-loose">
-              <li className="font-general-regular">
-                <span>Name: </span>
-                <a
-                  href="https://stoman.me"
-                  className=""
-                  aria-label="Project Website and Phone"
-                >
-                  World Bank
-                </a>
-              </li>
+              <li className="font-general-regular">Name: {client}</li>
             </ul>
           </div>
-          <div>Tools & Technologies</div>
+          <div className="flex flex-col">
+            <h2 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
+              Tools & Technologies
+            </h2>
+            <div>{techStack}</div>
+          </div>
         </div>
-        <div className="flex flex-row">Project Description</div>
+        <div className="flex flex-col basis-1/2">
+          <h2 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
+            Project Description
+          </h2>
+          <div>{detailsDescription}</div>
+        </div>
       </div>
     </div>
   );
