@@ -45,7 +45,7 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-20 flex-wrap">
+      <div className="flex flex-row gap-10 justify-between">
         <Image
           src="/geodash/1.png"
           alt="project image"
@@ -68,28 +68,50 @@ const ProjectDetails = () => {
           className="rounded-lg"
         />
       </div>
-      <div className="flex flex-row justify-between">
-        <div className="flex flex-col">
+      <div className="flex flex-row justify-between gap-20">
+        <div className="flex flex-col basis-1/2">
           <div className="mb-7">
-            <p className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
+            <h2 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
               Client
-            </p>
+            </h2>
             <ul className="leading-loose">
-              <li className="font-general-regular">
-                <span>Name: </span>
-                <a
-                  href="https://stoman.me"
-                  className=""
-                  aria-label="Project Website and Phone"
-                >
-                  World Bank
-                </a>
-              </li>
+              <li className="font-general-regular">Name: World Bank</li>
             </ul>
           </div>
-          <div>Tools & Technologies</div>
+          <div className="flex flex-col">
+            <h2 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
+              Tools & Technologies
+            </h2>
+            <div>
+              ASP.NET Core, EF Core, Angular, SQL Server, PostgreSQL, SQLite,
+              MongoDB, Docker, Kubernetes, Hangfire, RabbitMQ, Redis, AWS, Unit
+              Test, BDD Test, Identity Server 4, GitLab, CI/CD, Jira, Scrum,
+              Agile, Jesmine, Karma
+            </div>
+          </div>
         </div>
-        <div className="flex flex-row">Project Description</div>
+        <div className="flex flex-col basis-1/2">
+          <h2 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
+            Project Description
+          </h2>
+          <div>
+            GeoDASH is an integrated mapping platform developed on an open
+            source OGC compliant map server application, called GeoServer, with
+            a related Content Management Service (CMS) built on the open source
+            GeoNode platform. The platform is integrated into the government
+            infrastructure and is also available for public use. The system has
+            been redesigned and its functionalities upgraded for optimization
+            and better performance; to meet the requirements of the
+            organizations, which actively use the platform for storing their GIS
+            data as well as sharing information. Features: Create custom and
+            stylish maps using single or multiple layers, Role management,
+            Interoperability capabilities, Import and export layer data, modify
+            metadata, Integrated Map Tools (e.g. Routing, BBOX search and so
+            on), Coordinate view, elevation, address and reverse geocoding,
+            Print maps with data and base maps, Map analytics (e.g. map loads,
+            pan, zoom, etc.)
+          </div>
+        </div>
       </div>
     </div>
   );
