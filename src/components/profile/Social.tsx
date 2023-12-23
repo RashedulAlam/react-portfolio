@@ -23,6 +23,7 @@ const Social = ({ items = [] }: ISocialProps) => {
             key={index}
             className="rounded-lg h-24 w-24 bg-gray-200 flex flex-col justify-center items-center text-center text-xs"
             href={item.url}
+            target="_blank"
           >
             <Image src={item.logoSrc} height={50} width={50} alt="logo" />
             <p>{item.title}</p>
