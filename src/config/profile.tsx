@@ -70,7 +70,7 @@ export const PROFILE: IProfileProps = {
       },
     },
   ] as ITimeline[],
-  socialNetworks : [
+  socialNetworks: [
     {
       logoSrc: "/social/linkedin.svg",
       title: "LinkedIn",
@@ -86,5 +86,29 @@ export const PROFILE: IProfileProps = {
       title: "StackOverflow",
       url: "https://stackoverflow.com/users/5192323/rashedul-alam",
     },
-  ]
+  ],
+  studyHistories: [
+    {
+      title: "Masters in Information Technology (Major in Computer Science)",
+      period: "Aug, 2023 - On Going",
+      company: {
+        name: "Åbo Akademi University",
+        website: "https://www.abo.fi/fi/",
+        location: "Turku, Finland",
+        type: "On Site",
+        contract: "Full Time",
+      },
+    },
+    {
+      title: "Bachelor of Science in Software Engineering",
+      period: "Jan, 2012 - Dec 2016",
+      company: {
+        name: "Dhaka University",
+        website: "https://www.du.ac.bd/",
+        location: "Dhaka, Bangladesh",
+        type: "On Site",
+        contract: "Full Time",
+      },
+    },
+  ] as ITimeline[],
 };

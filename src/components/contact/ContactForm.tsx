@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="max-w-screen-md mx-auto p-5">
+    <div className="max-w-screen-md mx-auto">
       <div className="text-center mb-16">
         <h1 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
           Get In Touch

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export interface INavItem {
@@ -23,20 +24,24 @@ const Navbar = ({ navItems = [] }: INavbarProps) => {
          px-4
          text-lg text-gray-700"
       >
-        <div>
-          <a
-            href="/about"
-            className="cursor-pointer
+        <a
+          href="/"
+          className="cursor-pointer
               rounded-md 
-              px-2.5 text-3xl
+              text-3xl
               uppercase
               hover: underline-offset-4
               hover:underline
               "
-          >
-            Logo / Text
-          </a>
-        </div>
+        >
+          <Image
+            src="/profile/1.png"
+            height={20}
+            width={100}
+            alt="logo"
+            className="object-fill"
+          />
+        </a>
 
         <div
           className="hidden w-full md:flex md:items-center md:w-auto"
@@ -76,7 +81,7 @@ const Navbar = ({ navItems = [] }: INavbarProps) => {
           shadow bg-indigo-400 hover:bg-indigo-600 
           focus:shadow-outline focus:outline-none
           text-white font-bold py-2 px-6 rounded"
-          href="mailto:rashedulalam.iit.du@gmail.com"
+            href="mailto:rashedulalam.iit.du@gmail.com"
           >
             Hire Me
           </a>

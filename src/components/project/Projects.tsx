@@ -23,7 +23,7 @@ const Project = () => {
           details on any of the projects below, please send me a DM on my{" "}
           <a
             href="mailto:rashedulalam.iit.du@gmail.com"
-            className="hover:underline hover:underline-offset-2"
+            className="hover:underline hover:underline-offset-2 text-indigo-600"
           >
             email
           </a>{" "}
@@ -32,7 +32,7 @@ const Project = () => {
             href="https://www.linkedin.com/in/ralam0529/"
             target="_blank"
             rel="noopener"
-            className="hover:underline hover:underline-offset-2"
+            className="hover:underline hover:underline-offset-2 text-indigo-600"
           >
             linkedin
           </a>{" "}

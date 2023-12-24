@@ -15,14 +15,16 @@ export interface ITimeline {
 export interface ITimelineProps {
   timelines: ITimeline[];
   label?: string;
+  className?: string;
 }
 
 const Timeline = ({
   timelines = [],
   label = "Work & Career",
+  className = "",
 }: ITimelineProps) => {
   return (
-    <section className="flex flex-col">
+    <section className={`flex flex-col ${className}`}>
       <h1 className="text-3xl">{label}</h1>
       <div className="flex flex-col">
         {timelines.map((timeline, index) => (
