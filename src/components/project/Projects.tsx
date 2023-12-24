@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Card from "../common/Card";
 import { PROJECTS } from "@/config/projects";
@@ -39,12 +39,10 @@ const Project = () => {
           so we can discuss.
         </div>
       </div>
-      <div className="flex flex-col align-middle justify-between">
-        <div className="flex flex-row gap-10 flex-wrap">
-          {PROJECTS.map((project, i) => (
-            <Card key={i} {...project} onClick={onClickHandler} />
-          ))}
-        </div>
+      <div className="flex flex-row gap-10 flex-wrap justify-between items-center">
+        {PROJECTS.map((project, i) => (
+          <Card key={i} {...project} onClick={onClickHandler} />
+        ))}
       </div>
     </div>
   );

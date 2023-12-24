@@ -17,7 +17,7 @@ const Social = ({ items = [] }: ISocialProps) => {
       <div className="flex flex-row align-middle justify-center">
         <h2 className="text-3xl">Follow me</h2>
       </div>
-      <div className="flex flex-row gap-10 align-middle justify-center">
+      <div className="flex flex-row gap-10 items-center justify-center">
         {items.map((item, index) => (
           <a
             key={index}

@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroPrimaryContent = () => {
   return (
-    <div className="flex flex-row justify-between gap-10 sm:flex-col md:flex-row">
+    <div className="flex flex-col justify-between gap-10 sm:flex-col md:flex-row">
       <div className="flex flex-col gap-5">
         <h1 className="font-extrabold text-5xl text-indigo-800">
           Hi! I&apos;m Rashedul
@@ -38,11 +38,11 @@ const HeroPrimaryContent = () => {
           Download CV
         </a>
       </div>
-      <div className="flex flex-shrink-0">
+      <div className="hidden sm:hidden md:flex lg:basis-2/3">
         <Image
           src="/profile/2.jpg"
           alt="backgroud"
-          height={600}
+          height={400}
           width={600}
           className="object-cover"
         />

@@ -7,6 +7,7 @@ const ContactForm = () => {
         <h1 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
           Get In Touch
         </h1>
+        <small className="text-red-600">(Contruction In Progress)</small>
       </div>
 
       <form className="w-full">

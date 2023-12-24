@@ -24,7 +24,7 @@ const Card = ({
 }: ICardProps) => {
   return (
     <div
-      className="rounded-lg bg-white shadow-lg p-7 text-center sm:max-w-sm sm:p-4 cursor-pointer w-80"
+      className="rounded-lg bg-white shadow-lg p-7 text-center sm:max-w-sm sm:p-4 cursor-pointer w-80 flex-grow"
       onClick={() => onClick && onClick(id)}
     >
       <Image
@@ -35,9 +35,7 @@ const Card = ({
         width={400}
       />
       <div className="flex flex-col gap-1">
-        <h2 className="text-gray-800 capitalize text-xl font-bold py-4">
-          {title}
-        </h2>
+        <h2 className="capitalize text-xl font-bold py-4">{title}</h2>
         <p>{description}</p>
         <div className="flex flex-row justify-center gap-2">
           {tags.map((tag, index) => (

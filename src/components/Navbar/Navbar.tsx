@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export interface INavItem {
   label: string;
@@ -11,6 +12,12 @@ export interface INavbarProps {
 }
 
 const Navbar = ({ navItems = [] }: INavbarProps) => {
+  const [isOpened, setIsOpened] = useState(false);
+
+  const toogleMobileMenu = () => {
+    setIsOpened((prevState) => !prevState);
+  };
+
   return (
     <header>
       <nav
@@ -22,7 +29,7 @@ const Navbar = ({ navItems = [] }: INavbarProps) => {
          py-5
          md:py-5
          px-4
-         text-lg text-gray-700"
+         text-lg"
       >
         <a
           href="/"
@@ -43,39 +50,7 @@ const Navbar = ({ navItems = [] }: INavbarProps) => {
           />
         </a>
 
-        <div
-          className="hidden w-full md:flex md:items-center md:w-auto"
-          id="menu"
-        >
-          <ul
-            className="
-             pt-4
-             text-base text-gray-700
-             md:flex
-             md:justify-between 
-             md:pt-0"
-          >
-            {navItems.map((item, index) => (
-              <li key={`nav-bar-item-${index}`}>
-                <a
-                  className="
-                  block text-left text-lg text-primary-dark font-bold
-                  dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light
-                  sm:mx-4 sm:py-2
-                  hover:underline
-                  hover:underline-offset-8
-                  decoration-2
-                  "
-                  href={item.url}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="flex flex-row">
+        <div className="flex flex-row md:hidden">
           <a
             className="
           shadow bg-indigo-400 hover:bg-indigo-600 
@@ -94,14 +69,61 @@ const Navbar = ({ navItems = [] }: INavbarProps) => {
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          onClick={toogleMobileMenu}
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M4 6h16M4 12h16M4 18h16"
           />
         </svg>
+
+        <div
+          className={`w-full md:flex md:items-center md:w-auto ${
+            isOpened ? "" : " hidden "
+          }`}
+          id="menu"
+        >
+          <ul
+            className="
+             pt-4
+             text-base
+             md:flex
+             md:justify-between 
+             md:pt-0"
+          >
+            {navItems.map((item, index) => (
+              <li key={`nav-bar-item-${index}`}>
+                <a
+                  className="
+                  block text-left text-lg font-bold
+                  sm:mx-4 sm:py-2
+                  hover:underline
+                  hover:underline-offset-8
+                  decoration-2
+                  hover:text-indigo-600
+                  "
+                  href={item.url}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="hidden flex-row md:flex">
+          <a
+            className="
+          shadow bg-indigo-400 hover:bg-indigo-600 
+          focus:shadow-outline focus:outline-none
+          text-white font-bold py-2 px-6 rounded"
+            href="mailto:rashedulalam.iit.du@gmail.com"
+          >
+            Hire Me
+          </a>
+        </div>
       </nav>
     </header>
   );
