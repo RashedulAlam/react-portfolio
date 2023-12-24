@@ -34,7 +34,51 @@ const Navbar = ({ navItems = [] }: INavbarProps) => {
               hover:underline
               "
           >
-            <span className="text-5xl text-blue-600 font-bold border-spacing-2 text-center p-2">R</span>Alam
+            Logo / Text
+          </a>
+        </div>
+
+        <div
+          className="hidden w-full md:flex md:items-center md:w-auto"
+          id="menu"
+        >
+          <ul
+            className="
+             pt-4
+             text-base text-gray-700
+             md:flex
+             md:justify-between 
+             md:pt-0"
+          >
+            {navItems.map((item, index) => (
+              <li key={`nav-bar-item-${index}`}>
+                <a
+                  className="
+                  block text-left text-lg text-primary-dark font-bold
+                  dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light
+                  sm:mx-4 sm:py-2
+                  hover:underline
+                  hover:underline-offset-8
+                  decoration-2
+                  "
+                  href={item.url}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="flex flex-row">
+          <a
+            className="
+          shadow bg-indigo-400 hover:bg-indigo-600 
+          focus:shadow-outline focus:outline-none
+          text-white font-bold py-2 px-6 rounded"
+          href="mailto:rashedulalam.iit.du@gmail.com"
+          >
+            Hire Me
           </a>
         </div>
 
@@ -53,31 +97,6 @@ const Navbar = ({ navItems = [] }: INavbarProps) => {
             d="M4 6h16M4 12h16M4 18h16"
           />
         </svg>
-
-        <div
-          className="hidden w-full md:flex md:items-center md:w-auto"
-          id="menu"
-        >
-          <ul
-            className="
-             pt-4
-             text-base text-gray-700
-             md:flex
-             md:justify-between 
-             md:pt-0"
-          >
-            {navItems.map((item, index) => (
-              <li key={`nav-bar-item-${index}`}>
-                <a
-                  className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-                  href={item.url}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
       </nav>
     </header>
   );

@@ -9,6 +9,7 @@ export interface IProjectDetailsProps {
   images: string[];
   client: string;
   detailsDescription: string;
+  duration: string;
   [key: string]: any;
 }
 
@@ -18,11 +19,15 @@ const ProjectDetails = ({
   detailsDescription,
   images,
   techStack,
+  duration,
+  roles,
 }: IProjectDetailsProps) => {
   return (
     <div className="flex flex-col gap-14">
       <div className="flex flex-col gap-5">
-        <h1 className="text-left text-7xl font-bold">{title}</h1>
+        <h1 className="mb-4 text-4xl font-bold leading-none tracking-tigh md:text-5xl lg:text-6xl dark:text-white">
+          {title}
+        </h1>
         <div className="flex flex-row">
           <div className="flex items-center mr-10">
             <svg
@@ -40,7 +45,7 @@ const ProjectDetails = ({
               <circle cx="12" cy="12" r="10"></circle>
               <polyline points="12 6 12 12 16 14"></polyline>
             </svg>
-            <span className="ml-2 leading-none">Jul 26, 2021</span>
+            <span className="ml-2 leading-none">{duration}</span>
           </div>
           <div className="flex items-center">
             <svg
@@ -58,7 +63,9 @@ const ProjectDetails = ({
               <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
               <line x1="7" y1="7" x2="7.01" y2="7"></line>
             </svg>
-            <span className="ml-2 leading-none">UI / Frontend</span>
+            <span className="ml-2 leading-none">
+              {roles.join(" / ")}
+            </span>
           </div>
         </div>
       </div>

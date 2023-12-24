@@ -9,7 +9,12 @@ export const PROJECTS = [
     Test, BDD Test, Identity Server 4, GitLab, CI/CD, Jira, Scrum,
     Agile, Jesmine, Karma`,
     ],
-    roles: ["Tech Lead", "Senior Developer"],
+    roles: [
+      "Tech Lead",
+      "Senior Developer",
+      "Full Stack Developer",
+      "Mobile App Developer",
+    ],
     images: [
       "/no-image-warning/client-site.png",
       "/no-image-warning/online-search.png",
@@ -20,6 +25,7 @@ export const PROJECTS = [
     tags: ["Product", "Web & Mobile Application"],
     titleImage: "/no-image-warning/client-site.png",
     detailsDescription: `A platform that provides analytical dashboard from an ETL process. The system can load data from various sources (SQL Server, Snowflake etc.) With a collection of charts and themes the system can be easily configurable with a very a short time. In mobile application, user can download offline databases to visualize dashboard in offline as well as can see live dashboard in online. It provides data security, data preferences and policy-based access control on permission and restriction across all applications`,
+    duration: "Oct 2018 - Aug 2023",
   },
   {
     id: "2",
@@ -28,7 +34,7 @@ export const PROJECTS = [
     techStack: [
       "React, NextJs, ContentFUL, Cypress, Jest, Storybook, Component Library",
     ],
-    roles: [],
+    roles: ["UI", "Lead Developer"],
     images: [
       "/no-image-warning/client-site.png",
       "/no-image-warning/client-site.png",
@@ -39,13 +45,14 @@ export const PROJECTS = [
     tags: ["Web Portal"],
     titleImage: "/no-image-warning/client-site.png",
     detailsDescription: `Client Marketing Portal. Translation and contents are configured on CMS. Client can easily configure new page from already development component library and publish the page online`,
+    duration: "Sept 2023 - Nov 2023",
   },
   {
     id: "3",
     title: "GeoDash",
     description: "GIS Solution",
     techStack: ["GeoNode, OpenLayer 3.0, Leaflet, Python, Django, AngularJs"],
-    roles: [],
+    roles: ["UI", "Frontend"],
     images: ["/geodash/1.png", "/geodash/2.png", "/geodash/3.png"],
     client: "World Bank",
     notableContributions: [],
@@ -53,13 +60,14 @@ export const PROJECTS = [
     titleImage: "/geodash/3.png",
     detailsDescription:
       "GeoDASH is an integrated mapping platform developed on an open source OGC compliant map server application, called GeoServer, with a related Content Management Service (CMS) built on the open source GeoNode platform. The platform is integrated into the government infrastructure and is also available for public use. The system has been redesigned and its functionalities upgraded for optimization and better performance; to meet the requirements of the organizations, which actively use the platform for storing their GIS data as well as sharing information. Features: Create custom and stylish maps using single or multiple layers, Role management, Interoperability capabilities, Import and export layer data, modify metadata, Integrated Map Tools (e.g. Routing, BBOX search and so on), Coordinate view, elevation, address and reverse geocoding, Print maps with data and base maps, Map analytics (e.g. map loads, pan, zoom, etc.)",
+    duration: "Apr 2018 - Aug 2018",
   },
   {
     id: "4",
     title: "NSDI",
     description: "GIS Solution",
     techStack: ["GeoNode, OpenLayer 3.0, Leaflet, Python, Django, AngularJs"],
-    roles: [],
+    roles: ["UI", "Frontend"],
     images: ["/nsdi/1.png", "/nsdi/2.png", "/nsdi/3.png"],
     client: "JICA Bangladesh",
     notableContributions: [],
@@ -67,13 +75,16 @@ export const PROJECTS = [
     titleImage: "/nsdi/3.png",
     detailsDescription:
       "National Spatial Data Infrastructure (NSDI) is an integrated database system of geospatial information and maps where all valuable mapping information and geospatial information will be stored by different agencies under unified specifications. Through role-based access all members can access and utilize all information in the database in a secured way for various kinds of public activities. NSDI prototype system (NSDI-PS) is a web portal to evaluate the function and efficiency of NSDI. The system consists of a server system which distributes geospatial data along with digital base maps and a web portal site to provide secured access to the server system for NSDI users. Features: Create map using single or multiple layers Create custom and stylish maps, Integrated Map Tools (e.g. Routing, BBOX search and so on), Coordinate view, elevation, address and reverse geocoding, Cross-layer buffer search, Print high quality map, Map analytics (e.g. map loads, pan, zoom and so on), Role Management, Access monitoring",
+    duration: "Apr 2018 - Aug 2018",
   },
   {
     id: "5",
     title: "STREAM",
     description: "Results and Evidence Management",
-    techStack: ["ASP.NET MVC, AngularJs, Leaflet, OpenLayers 3.0, PostgreSQL, Ionic, GIS"],
-    roles: [],
+    techStack: [
+      "ASP.NET MVC, AngularJs, Leaflet, OpenLayers 3.0, PostgreSQL, Ionic, GIS",
+    ],
+    roles: ["Full Stack", "Mobile App Developer"],
     images: [
       "/no-image-warning/client-site.png",
       "/stream/1.png",
@@ -85,6 +96,7 @@ export const PROJECTS = [
     titleImage: "/stream/1.png",
     detailsDescription:
       "System for Tracking Results and Evidence for Adoptive Management (STREAM) creates a comprehensive framework for continuous Monitoring and Evaluation (M&E) process through routine checking and assessment, census survey, inventory overviews and management. Functions such as demographic pro ling, managing commodity distribution, cash transfer, inventory management, complaint management system and smart card feature are incorporated into the system in addition to basic M&E functions. Features: Integrated MIS and GIS, Dynamic dashboard creation and sharing with different level of permission, Household census, dynamic reporting and visualization tools, Real-time data synchronization, Import and export documents and images, Role-based access, Inter-organizational data sharing and collaborative platform. ",
+    duration: "Jun 2017 - Apr 2018",
   },
   {
     id: "6",
@@ -93,20 +105,26 @@ export const PROJECTS = [
     techStack: [
       "ASP.NET web API 2.0, AngularJs, LeafletJs, SQL Server, GIT, BitBucket",
     ],
-    roles: [],
+    roles: [
+      "Bachelor Studies",
+      "Requirement Analysis",
+      "Design",
+      "Development",
+    ],
     images: ["/ducc/1.png", "/ducc/2.png", "/ducc/3.png"],
     client: "Dhaka University",
     notableContributions: [],
     tags: ["GIS based community e commerce"],
     titleImage: "/ducc/1.png",
     detailsDescription: "",
+    duration: "Jul 2016 - Dec 2016",
   },
   {
     id: "7",
     title: "Loence ERP",
     description: "ERP Software",
     techStack: ["NodeJs, Angular 2, MongoDB"],
-    roles: [],
+    roles: ["UI", "Lead Frontend", "Entrepreneurship"],
     images: [
       "/no-image-warning/client-site.png",
       "/no-image-warning/client-site.png",
@@ -117,5 +135,6 @@ export const PROJECTS = [
     tags: ["Web Application"],
     titleImage: "/no-image-warning/client-site.png",
     detailsDescription: "",
+    duration: "Jan 2017 - Jun 2017",
   },
 ];

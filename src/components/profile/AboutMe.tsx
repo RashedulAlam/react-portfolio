@@ -12,13 +12,13 @@ export interface IAboutMeProps {
 const AboutMe = ({ photo, descriptions = [] }: IAboutMeProps) => {
   return (
     <div className="flex flex-col gap-10 sm:flex-col md:flex-col lg:flex-row">
-      <div className="flex flex-row sm:justify-center md:justify-center lg:justify-start">
+      <div className="flex flex-row justify-center sm:justify-center md:justify-center lg:justify-start flex-shrink-0">
         <Image
           src={photo.src}
           alt={photo.alt}
-          height={400}
-          width={400}
-          className="rounded-lg object-cover"
+          height={300}
+          width={300}
+          className="rounded-lg object-fill flex-grow-0"
         />
       </div>
       <div className="flex flex-col gap-5">

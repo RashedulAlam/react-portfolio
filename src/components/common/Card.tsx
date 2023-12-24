@@ -24,7 +24,7 @@ const Card = ({
 }: ICardProps) => {
   return (
     <div
-      className="rounded-lg bg-white shadow-lg p-7 text-center sm:max-w-sm sm:p-4 sm:pb-12 cursor-pointer min-w-96"
+      className="rounded-lg bg-white shadow-lg p-7 text-center sm:max-w-sm sm:p-4 cursor-pointer w-80"
       onClick={() => onClick && onClick(id)}
     >
       <Image
@@ -34,8 +34,8 @@ const Card = ({
         height={400}
         width={400}
       />
-      <div className="flex flex-col gap-3">
-        <h2 className="text-gray-800 capitalize text-xl font-bold pt-8 pb-4">
+      <div className="flex flex-col gap-1">
+        <h2 className="text-gray-800 capitalize text-xl font-bold py-4">
           {title}
         </h2>
         <p>{description}</p>
@@ -43,7 +43,7 @@ const Card = ({
           {tags.map((tag, index) => (
             <p
               key={`project-tag-${index}`}
-              className="rounded-lg p-5 font-semibold text-sm"
+              className="rounded-lg font-semibold text-sm"
             >
               {tag}
             </p>

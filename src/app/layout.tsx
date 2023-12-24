@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} py-2 px-2 md:px-24 lg:px-24 md:py-5 lg:py-5`}>
         <Navbar navItems={NAV_ITEMS} />
         {children}
       </body>

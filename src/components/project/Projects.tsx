@@ -14,7 +14,7 @@ const Project = () => {
   return (
     <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-3">
-        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tigh md:text-5xl lg:text-6xl dark:text-white">
+        <h1 className="mb-4 text-4xl font-bold leading-none tracking-tigh md:text-5xl lg:text-6xl dark:text-white">
           Projects
         </h1>
         <div className="text">

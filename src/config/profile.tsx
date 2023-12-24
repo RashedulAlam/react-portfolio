@@ -19,7 +19,7 @@ export const PROFILE: IProfileProps = {
       </strong> 
       databases like <strong>PostgreSQL, SQL Server, MongoDB, Redis</strong> 
       other technologies like 
-      <strong>Docker, Kubernetes, Cloud(AWS)</strong>.`,
+      <strong>Docker, Kubernetes, Cloud(AWS), Git, GitLab, CI/CD, SCRUM, Agile </strong> etc.`,
       `When I&apos;m not in front of the computer, you can find me kicking a 
       <strong>football or playing cricket</strong>. It&apos;s not just about
       winning; it&apos;s about teamwork, having a strategy, and not giving
