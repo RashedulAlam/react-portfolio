@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
 import Card from "../common/Card";
-import { PROJECTS } from "@/config/projects";
 import { useRouter } from "next/navigation";
 import Social, { ISocialItem } from "../profile/Social";
-import { PROFILE } from "@/config/profile";
 
 export interface IHeroAdditionalProps {
   projectsLabel: string;
@@ -27,11 +25,11 @@ const HeroAdditionalContents = ({
     <div className="flex flex-col gap-14">
       <div className="flex flex-col">
         <h1 className="mb-10 text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl dark:text-white">
-          Projects
+          {projectsLabel}
         </h1>
         <div className="flex flex-col align-middle justify-between">
           <div className="flex flex-row gap-10 flex-wrap justify-between items-center">
-            {PROJECTS.slice(0, 3).map((project, i) => (
+            {projects.map((project, i) => (
               <Card key={i} {...project} onClick={onClickHandler} />
             ))}
           </div>
@@ -40,7 +38,7 @@ const HeroAdditionalContents = ({
         <div className="flex justify-center items-center mt-10">
           <a
             className="
-          shadow bg-indigo-400 hover:bg-indigo-600 
+          shadow bg-indigo-600 hover:bg-indigo-800 
           focus:shadow-outline focus:outline-none
           text-white font-bold py-2 px-6 rounded"
             href="/projects"
@@ -50,7 +48,7 @@ const HeroAdditionalContents = ({
         </div>
       </div>
       <div className="flex flex-row justify-center items-center">
-        <Social items={PROFILE.socialNetworks} />
+        <Social items={socialNetworks} />
       </div>
     </div>
   );

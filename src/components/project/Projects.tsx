@@ -4,7 +4,12 @@ import Card from "../common/Card";
 import { PROJECTS } from "@/config/projects";
 import { useRouter } from "next/navigation";
 
-const Project = () => {
+export interface IProjectsProps {
+  heroEmail: string;
+  linkedInProfile: string;
+}
+
+const Projects = ({ heroEmail, linkedInProfile }: IProjectsProps) => {
   const router = useRouter();
 
   const onClickHandler = (id: string) => {
@@ -22,14 +27,14 @@ const Project = () => {
           companies and studies. If you have a project in mind or you want more
           details on any of the projects below, please send me a DM on my{" "}
           <a
-            href="mailto:rashedulalam.iit.du@gmail.com"
+            href={heroEmail}
             className="hover:underline hover:underline-offset-2 text-indigo-600"
           >
             email
           </a>{" "}
           or{" "}
           <a
-            href="https://www.linkedin.com/in/ralam0529/"
+            href={linkedInProfile}
             target="_blank"
             rel="noopener"
             className="hover:underline hover:underline-offset-2 text-indigo-600"
@@ -48,4 +53,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Projects;

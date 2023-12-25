@@ -2,40 +2,33 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="max-w-screen-md mx-auto">
-      <div className="text-center mb-16">
-        <h1 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
-          Get In Touch
-        </h1>
-        <small className="text-red-600">(Contruction In Progress)</small>
-      </div>
-
+    <div className="max-w-screen-md mx-auto basis-1/2">
       <form className="w-full">
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="grid-first-name"
+              htmlFor="contact-first-name"
             >
               First Name
             </label>
             <input
               className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-              id="grid-first-name"
+              id="contact-first-name"
               type="text"
-              placeholder="Jane"
+              placeholder="Jon"
             />
           </div>
           <div className="w-full md:w-1/2 px-3">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="grid-last-name"
+              htmlFor="contact-last-name"
             >
               Last Name
             </label>
             <input
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-last-name"
+              id="contact-last-name"
               type="text"
               placeholder="Doe"
             />
@@ -45,13 +38,13 @@ const ContactForm = () => {
           <div className="w-full px-3">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="grid-password"
+              htmlFor="contact-email"
             >
               Email Address
             </label>
             <input
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-email"
+              id="contact-email"
               type="email"
               placeholder="********@*****.**"
             />
@@ -62,11 +55,12 @@ const ContactForm = () => {
           <div className="w-full px-3">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="grid-password"
+              htmlFor="contact-message"
             >
               Your Message
             </label>
             <textarea
+              id="contact-message"
               rows={10}
               placeholder="Enter your message"
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
