@@ -54,7 +54,7 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
         <div className="flex flex-row md:hidden">
           <a
             className="
-          shadow bg-indigo-400 hover:bg-indigo-600 
+            shadow bg-indigo-600 hover:bg-indigo-800 
           focus:shadow-outline focus:outline-none
           text-white font-bold py-2 px-6 rounded"
             href={heroEmail}
