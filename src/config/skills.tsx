@@ -149,7 +149,7 @@ export const SKILLS: ISkillGroup[] = [
         class: `font-semibold hover:text-indigo-600`,
       },
       {
-        name: "PACT(Contract Testing)",
+        name: "PACT",
         icon: ``,
         class: `font-semibold hover:text-indigo-600`,
       },
@@ -252,6 +252,16 @@ export const SKILLS: ISkillGroup[] = [
         name: "WebStorm",
         icon: `<i class="devicon-webstorm-plain colored"></i>`,
         class: `font-semibold hover:text-indigo-600`,
+      },
+      {
+        name: "DataGrip",
+        icon: ``,
+        class: ``,
+      },
+      {
+        name: "AzureDataStudio",
+        icon: ``,
+        class: ``,
       },
     ],
   },

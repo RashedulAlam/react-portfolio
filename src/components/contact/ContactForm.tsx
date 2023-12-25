@@ -66,8 +66,9 @@ const ContactForm = () => {
               className="appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             ></textarea>
           </div>
-          <div className="flex w-full px-3 justify-start mt-6">
+          <div className="flex w-full px-3 justify-start mt-6 gap-3">
             <button
+            disabled
               className="shadow bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
               type="submit"
             >
