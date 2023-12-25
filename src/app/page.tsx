@@ -1,7 +1,7 @@
 import Hero, { IHeroProps } from "@/components/Hero/Hero";
 import { HERO_SUMMARY } from "@/config/hero";
 import { PROJECTS } from "@/config/projects";
-import { SKILLS, SOFT_SKILLS } from "@/config/skills";
+import { SKILLS, SKILL_CONFIG, SOFT_SKILLS } from "@/config/skills";
 import { SOCIAL_NETWORKS } from "@/config/socialNetworks";
 
 export default function Home() {
@@ -13,8 +13,10 @@ export default function Home() {
       socialNetworks: SOCIAL_NETWORKS,
     },
     skills: {
-      label: "",
-      shortSummary: "",
+      softSkillIntro: SKILL_CONFIG.softSkillIntro,
+      softSkillLabel: SKILL_CONFIG.softSkillLabel,
+      techSkillIntro: SKILL_CONFIG.techSkillIntro,
+      techSkillLabel: SKILL_CONFIG.techSkillLabel,
       skills: SKILLS,
       softSkills: SOFT_SKILLS,
     },
