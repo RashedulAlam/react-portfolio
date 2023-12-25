@@ -8,7 +8,7 @@ export default function Home() {
   const props: IHeroProps = {
     primary: HERO_SUMMARY,
     secondary: {
-      projects: PROJECTS.slice(0, 2),
+      projects: PROJECTS.slice(0, 3),
       projectsLabel: "Projects",
       socialNetworks: SOCIAL_NETWORKS,
     },

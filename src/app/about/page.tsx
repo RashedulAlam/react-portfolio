@@ -1,6 +1,6 @@
 import Profile from "@/components/profile/Profile";
 
-export default function Projects() {
+export default function AboutPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Profile />

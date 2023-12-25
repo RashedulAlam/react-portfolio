@@ -9,9 +9,10 @@ export interface INavItem {
 
 export interface INavbarProps {
   navItems: INavItem[];
+  heroEmail: string;
 }
 
-const Navbar = ({ navItems = [] }: INavbarProps) => {
+const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
   const [isOpened, setIsOpened] = useState(false);
 
   const toogleMobileMenu = () => {
@@ -56,7 +57,7 @@ const Navbar = ({ navItems = [] }: INavbarProps) => {
           shadow bg-indigo-400 hover:bg-indigo-600 
           focus:shadow-outline focus:outline-none
           text-white font-bold py-2 px-6 rounded"
-            href="mailto:rashedulalam.iit.du@gmail.com"
+            href={heroEmail}
           >
             Hire Me
           </a>
@@ -116,10 +117,10 @@ const Navbar = ({ navItems = [] }: INavbarProps) => {
         <div className="hidden flex-row md:flex">
           <a
             className="
-          shadow bg-indigo-400 hover:bg-indigo-600 
+          shadow bg-indigo-600 hover:bg-indigo-800 
           focus:shadow-outline focus:outline-none
           text-white font-bold py-2 px-6 rounded"
-            href="mailto:rashedulalam.iit.du@gmail.com"
+            href={heroEmail}
           >
             Hire Me
           </a>

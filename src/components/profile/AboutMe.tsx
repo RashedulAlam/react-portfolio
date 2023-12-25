@@ -18,7 +18,7 @@ const AboutMe = ({ photo, descriptions = [] }: IAboutMeProps) => {
           alt={photo.alt}
           height={300}
           width={300}
-          className="rounded-lg object-fill flex-grow-0"
+          className="rounded-lg"
         />
       </div>
       <div className="flex flex-col gap-5">
