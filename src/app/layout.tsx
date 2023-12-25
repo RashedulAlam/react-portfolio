@@ -5,6 +5,7 @@ import Navbar, { INavbarProps } from "@/components/Navbar/Navbar";
 import { NAV_ITEMS } from "@/config/navItems";
 import Footer from "@/components/Footer/Footer";
 import { HERO_SUMMARY } from "@/config/hero";
+import CustomScrollToTop from "@/components/common/CustomScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         <Navbar {...navigationProps} />
         {children}
         <Footer />
+        <CustomScrollToTop />
       </body>
     </html>
   );
