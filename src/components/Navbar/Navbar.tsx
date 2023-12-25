@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import Switcher from "../darkmode/Switcher";
+import SlideOver from "../common/SlideOver";
 
 export interface INavItem {
   label: string;
@@ -14,12 +15,6 @@ export interface INavbarProps {
 }
 
 const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
-  const [isOpened, setIsOpened] = useState(false);
-
-  const toogleMobileMenu = () => {
-    setIsOpened((prevState) => !prevState);
-  };
-
   return (
     <header>
       <nav
@@ -63,28 +58,8 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
             Hire Me
           </a>
         </div>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          id="menu-button"
-          className="h-6 w-6 cursor-pointer md:hidden block"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          onClick={toogleMobileMenu}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-
         <div
-          className={`w-full md:flex md:items-center md:w-auto ${
-            isOpened ? "" : " hidden "
-          }`}
+          className={`w-full md:flex md:items-center md:w-auto hidden sm:hidden `}
           id="menu"
         >
           <ul
@@ -127,6 +102,33 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
           </a>
         </div>
         <Switcher />
+        <SlideOver>
+          <ul
+            className="
+            mt-10
+            p-10
+             text-base
+             flex flex-col gap-2"
+          >
+            {navItems.map((item, index) => (
+              <li key={`nav-bar-item-${index}`}>
+                <a
+                  className="
+                  block text-left text-lg font-bold
+                  sm:mx-4 sm:py-2
+                  hover:underline
+                  hover:underline-offset-8
+                  decoration-2
+                  hover:text-indigo-600
+                  "
+                  href={item.url}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </SlideOver>
       </nav>
     </header>
   );

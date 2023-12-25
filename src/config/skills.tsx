@@ -149,6 +149,11 @@ export const SKILLS: ISkillGroup[] = [
         class: `font-semibold hover:text-indigo-600`,
       },
       {
+        name: "PACT(Contract Testing)",
+        icon: ``,
+        class: `font-semibold hover:text-indigo-600`,
+      },
+      {
         name: "K6(Load Testing)",
         icon: `<i className="devicon-react-original colored"></i>`,
         class: ``,

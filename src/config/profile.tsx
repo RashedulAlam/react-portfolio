@@ -103,7 +103,7 @@ export const PROFILE: IProfileProps = {
       title: "Bachelor of Science in Software Engineering",
       period: "Jan, 2012 - Dec 2016",
       company: {
-        name: "Dhaka University",
+        name: "University of Dhaka",
         website: "https://www.du.ac.bd/",
         location: "Dhaka, Bangladesh",
         type: "On Site",
