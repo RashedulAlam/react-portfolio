@@ -10,7 +10,7 @@ export const PROFILE: IProfileProps = {
     descriptions: [
       `Hi! I&apos;m <strong>Rashedul Alam</strong>, a Full Stack Developer.I
     have been working and developing new things as a software
-    developer for the more than 6 years. I am specialized on .NET and JavaScript technologies.`,
+    developer for the more than 6 years. I am specialized on .NET and JavaScript based technologies.`,
       `I have demonstrated working experience with programing languages like 
       <strong>HTML, CSS, JavaScript, TypeScript, C#, Python, Java</strong> frameworks
       like 

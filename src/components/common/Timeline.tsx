@@ -25,7 +25,7 @@ const Timeline = ({
 }: ITimelineProps) => {
   return (
     <section className={`flex flex-col ${className}`}>
-      <h1 className="text-3xl">{label}</h1>
+      <h1 className="text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl dark:text-white">{label}</h1>
       <div className="flex flex-col">
         {timelines.map((timeline, index) => (
           <div

@@ -3,10 +3,20 @@ import React from "react";
 import Card from "../common/Card";
 import { PROJECTS } from "@/config/projects";
 import { useRouter } from "next/navigation";
-import Social from "../profile/Social";
+import Social, { ISocialItem } from "../profile/Social";
 import { PROFILE } from "@/config/profile";
 
-const HeroAdditionalContents = () => {
+export interface IHeroAdditionalProps {
+  projectsLabel: string;
+  projects: any[];
+  socialNetworks: ISocialItem[];
+}
+
+const HeroAdditionalContents = ({
+  projects,
+  projectsLabel,
+  socialNetworks,
+}: IHeroAdditionalProps) => {
   const router = useRouter();
 
   const onClickHandler = (id: string) => {
@@ -16,7 +26,7 @@ const HeroAdditionalContents = () => {
   return (
     <div className="flex flex-col gap-14">
       <div className="flex flex-col">
-        <h1 className="mb-10 text-4xl font-bold leading-none tracking-tigh md:text-5xl lg:text-6xl dark:text-white">
+        <h1 className="mb-10 text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl dark:text-white">
           Projects
         </h1>
         <div className="flex flex-col align-middle justify-between">

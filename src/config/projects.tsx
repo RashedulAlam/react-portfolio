@@ -12,8 +12,7 @@ export const PROJECTS = [
     roles: [
       "Tech Lead",
       "Senior Developer",
-      "Full Stack Developer",
-      "Mobile App Developer",
+      "Full Stack Developer"
     ],
     images: [
       "/no-image-warning/client-site.png",

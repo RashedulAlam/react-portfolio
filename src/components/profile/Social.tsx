@@ -15,7 +15,7 @@ const Social = ({ items = [] }: ISocialProps) => {
   return (
     <div className="flex flex-col gap-10">
       <div className="flex flex-row align-middle justify-center">
-        <h2 className="text-3xl">Follow me</h2>
+        <h2 className="text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl dark:text-white">Follow me</h2>
       </div>
       <div className="flex flex-row gap-10 items-center justify-center">
         {items.map((item, index) => (

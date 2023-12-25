@@ -25,15 +25,15 @@ const ProjectDetails = ({
   return (
     <div className="flex flex-col gap-14">
       <div className="flex flex-col gap-5">
-        <h1 className="mb-4 text-4xl font-bold leading-none tracking-tigh md:text-5xl lg:text-6xl dark:text-white">
+        <h1 className="text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl dark:text-white">
           {title}
         </h1>
-        <div className="flex flex-row">
-          <div className="flex items-center mr-10">
+        <div className="flex flex-col sm:flex-col md:flex-row gap-5">
+          <div className="flex items-center">
             <svg
               stroke="currentColor"
               fill="none"
-              stroke-width="2"
+              strokeWidth="2"
               viewBox="0 0 24 24"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -47,11 +47,11 @@ const ProjectDetails = ({
             </svg>
             <span className="ml-2 leading-none">{duration}</span>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-start">
             <svg
               stroke="currentColor"
               fill="none"
-              stroke-width="2"
+              strokeWidth="2"
               viewBox="0 0 24 24"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -63,43 +63,39 @@ const ProjectDetails = ({
               <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
               <line x1="7" y1="7" x2="7.01" y2="7"></line>
             </svg>
-            <span className="ml-2 leading-none">
-              {roles.join(" / ")}
-            </span>
+            <span className="ml-2 leading-none">{roles.join(" / ")}</span>
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-10 justify-between">
+      <div className="flex flex-row gap-10 justify-between flex-wrap items-center sm:justify-center md:justify-between">
         {images.map((image, index) => (
           <Image
             key={`image-${index}`}
             src={image}
             alt="project image"
             height={600}
-            width={400}
+            width={300}
             className="rounded-lg"
           />
         ))}
       </div>
-      <div className="flex flex-row justify-between gap-20">
+      <div className="flex flex-col justify-between gap-20 sm:flex-col md:flex-row">
         <div className="flex flex-col basis-1/2">
           <div className="mb-7">
-            <h2 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
-              Client
-            </h2>
+            <h2 className="text-xl font-semibold mb-2 md:text-2xl">Client</h2>
             <ul className="leading-loose">
               <li className="font-general-regular">Name: {client}</li>
             </ul>
           </div>
           <div className="flex flex-col">
-            <h2 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
+            <h2 className="text-xl md:text-2xl font-semibold mb-2">
               Tools & Technologies
             </h2>
             <div>{techStack}</div>
           </div>
         </div>
         <div className="flex flex-col basis-1/2">
-          <h2 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
+          <h2 className="text-xl md:text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
             Project Description
           </h2>
           <div>{detailsDescription}</div>
