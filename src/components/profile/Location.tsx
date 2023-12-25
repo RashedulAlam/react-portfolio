@@ -28,7 +28,7 @@ const Location = ({ heroEmail }: ILocationProps) => {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
       <small className="text-red-600 text-xs font-semibold">
-        Note: This is actual location. Housing is provided by TYS. Due to
+        Note: This is not actual location. Housing is provided by TYS. Due to
         privacy concern actual location is not provided.
       </small>
     </div>

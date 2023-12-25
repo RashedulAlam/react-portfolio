@@ -24,7 +24,7 @@ const HeroAdditionalContents = ({
   return (
     <div className="flex flex-col gap-14">
       <div className="flex flex-col">
-        <h1 className="mb-10 text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl dark:text-white">
+        <h1 className="mb-10 text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl">
           {projectsLabel}
         </h1>
         <div className="flex flex-col align-middle justify-between">

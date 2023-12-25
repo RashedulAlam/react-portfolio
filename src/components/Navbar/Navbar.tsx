@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import Switcher from "../darkmode/Switcher";
 
 export interface INavItem {
   label: string;
@@ -125,6 +126,7 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
             Hire Me
           </a>
         </div>
+        <Switcher />
       </nav>
     </header>
   );

@@ -10,6 +10,7 @@ export interface IProjectDetailsProps {
   client: string;
   detailsDescription: string;
   duration: string;
+  location: string;
   [key: string]: any;
 }
 
@@ -21,11 +22,12 @@ const ProjectDetails = ({
   techStack,
   duration,
   roles,
+  location,
 }: IProjectDetailsProps) => {
   return (
     <div className="flex flex-col gap-14">
       <div className="flex flex-col gap-5">
-        <h1 className="text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl dark:text-white">
+        <h1 className="text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl ">
           {title}
         </h1>
         <div className="flex flex-col sm:flex-col md:flex-row gap-5">
@@ -37,7 +39,7 @@ const ProjectDetails = ({
               viewBox="0 0 24 24"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-lg text-ternary-dark dark:text-ternary-light"
+              className="text-lg"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +57,7 @@ const ProjectDetails = ({
               viewBox="0 0 24 24"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-lg text-ternary-dark dark:text-ternary-light"
+              className="text-lg"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -85,6 +87,7 @@ const ProjectDetails = ({
             <h2 className="text-xl font-semibold mb-2 md:text-2xl">Client</h2>
             <ul className="leading-loose">
               <li className="font-general-regular">Name: {client}</li>
+              <li className="font-general-regular">Location: {location}</li>
             </ul>
           </div>
           <div className="flex flex-col">
@@ -95,7 +98,7 @@ const ProjectDetails = ({
           </div>
         </div>
         <div className="flex flex-col basis-1/2">
-          <h2 className="text-xl md:text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
+          <h2 className="text-xl md:text-2xl font-semibold mb-2">
             Project Description
           </h2>
           <div>{detailsDescription}</div>

@@ -10,7 +10,7 @@ const ContactPage = () => {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
       <div className="text-center mb-16">
-        <h1 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+        <h1 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
           Get In Touch
         </h1>
       </div>

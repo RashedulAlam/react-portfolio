@@ -25,7 +25,9 @@ const Timeline = ({
 }: ITimelineProps) => {
   return (
     <section className={`flex flex-col ${className}`}>
-      <h1 className="text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl dark:text-white">{label}</h1>
+      <h1 className="text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl">
+        {label}
+      </h1>
       <div className="flex flex-col">
         {timelines.map((timeline, index) => (
           <div
@@ -41,11 +43,9 @@ const Timeline = ({
               <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-36 h-6 mb-3 sm:mb-0 text-white bg-indigo-600 rounded-full">
                 {timeline.period}
               </time>
-              <div className="text-xl font-bold text-slate-900">
-                {timeline.title}
-              </div>
+              <div className="text-xl font-bold ">{timeline.title}</div>
             </div>
-            <div className="text-slate-500">
+            <div className="">
               <a
                 href={timeline.company.website}
                 className="hover:underline hover:underline-offset-2"
@@ -54,7 +54,7 @@ const Timeline = ({
               </a>
               - {timeline.company.contract}
             </div>
-            <div className="text-slate-500">
+            <div className="">
               {timeline.company.location} - {timeline.company.type}
             </div>
           </div>

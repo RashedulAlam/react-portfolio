@@ -31,9 +31,10 @@ const SkillCard = ({
   return (
     <div className="flex flex-col gap-14">
       <div className="flex flex-col">
-        <h1 className="mb-10 text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl dark:text-white">
+        <h1 className="mb-2 text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl">
           Technical Skills
         </h1>
+        <h2 className="mb-5 text-sm">{techSkillIntro}</h2>
         <div className="flex flex-row gap-5 justify-between flex-wrap">
           {skills.map((skill, index) => (
             <div
@@ -44,7 +45,7 @@ const SkillCard = ({
               <ul className="flex flex-col gap-2">
                 {skill.items.map((item, index) => (
                   <li
-                    className="flex flex-row justify-start items-center text-sm gap-2"
+                    className={`flex flex-row justify-start items-center cursor-pointer text-sm gap-2 ${item.class}`}
                     key={`${skill.groupName}-${item.name}-${index}`}
                   >
                     <span>{item.name}</span>
@@ -59,9 +60,10 @@ const SkillCard = ({
         </div>
       </div>
       <div className="flex flex-col">
-        <h1 className="mb-10 text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl dark:text-white">
+        <h1 className="mb-2 text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl">
           Soft Skills
         </h1>
+        <h2 className="mb-5 text-sm">{softSkillIntro}</h2>
         <div className="flex flex-row gap-5 justify-between flex-wrap">
           {softSkills.map((skill, index) => (
             <div
