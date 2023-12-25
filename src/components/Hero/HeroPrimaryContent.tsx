@@ -34,10 +34,10 @@ const HeroPrimaryContent = ({
           alt={"photo.alt"}
           height={300}
           width={300}
-          className="rounded-full flex-grow-0 m-auto object-scale-down"
+          className="rounded-full flex-grow-0 m-auto object-scale-down md:rounded"
         />
         <div className="flex flex-col gap-5 justify-between items-center">
-          <h1 className="font-extrabold text-5xl text-indigo-800 text-center">
+          <h1 className="font-extrabold text-5xl text-indigo-800 text-center dark:text-indigo-300">
             {name}
           </h1>
           <h2 className="text-sm text-center ">

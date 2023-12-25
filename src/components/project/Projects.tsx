@@ -19,7 +19,7 @@ const Projects = ({ heroEmail, linkedInProfile }: IProjectsProps) => {
   return (
     <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-3">
-        <h1 className="mb-10 text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl dark:text-white">
+        <h1 className="mb-10 text-4xl font-bold leading-none tracking-tigh md:text-4xl lg:text-4xl">
           Projects
         </h1>
         <div className="text">
