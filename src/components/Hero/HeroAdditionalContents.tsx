@@ -3,6 +3,7 @@ import React from "react";
 import Card from "../common/Card";
 import { useRouter } from "next/navigation";
 import Social, { ISocialItem } from "../profile/Social";
+import Link from "next/link";
 
 export interface IHeroAdditionalProps {
   projectsLabel: string;
@@ -36,7 +37,7 @@ const HeroAdditionalContents = ({
         </div>
 
         <div className="flex justify-center items-center mt-10">
-          <a
+          <Link
             className="
           shadow bg-indigo-600 hover:bg-indigo-800 
           focus:shadow-outline focus:outline-none
@@ -44,7 +45,7 @@ const HeroAdditionalContents = ({
             href="/projects"
           >
             More Projects
-          </a>
+          </Link>
         </div>
       </div>
       <div className="flex flex-row justify-center items-center">

@@ -24,7 +24,10 @@ const Card = ({
 }: ICardProps) => {
   return (
     <div
-      className="rounded-lg shadow-lg p-7 text-center sm:max-w-sm sm:p-4 cursor-pointer w-80 flex-grow dark:bg-gray-500"
+      className="
+      rounded-lg shadow-lg p-7 text-center 
+      sm:max-w-sm sm:p-4 cursor-pointer w-80 flex-grow dark:bg-gray-500
+      "
       onClick={() => onClick && onClick(id)}
     >
       <Image
