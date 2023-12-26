@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Switcher from "../darkmode/Switcher";
 import SlideOver from "../common/SlideOver";
+import Link from "next/link";
 
 export interface INavItem {
   label: string;
@@ -28,7 +29,7 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
          px-4
          text-lg"
       >
-        <a
+        <Link
           href="/"
           className="cursor-pointer
               rounded-md 
@@ -45,10 +46,10 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
             alt="logo"
             className="object-fill"
           />
-        </a>
+        </Link>
 
         <div className="flex flex-row md:hidden">
-          <a
+          <Link
             className="
             shadow bg-indigo-600 hover:bg-indigo-800 
           focus:shadow-outline focus:outline-none
@@ -56,7 +57,7 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
             href={heroEmail}
           >
             Hire Me
-          </a>
+          </Link>
         </div>
         <div
           className={`w-full md:flex md:items-center md:w-auto hidden sm:hidden `}
@@ -72,7 +73,7 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
           >
             {navItems.map((item, index) => (
               <li key={`nav-bar-item-${index}`}>
-                <a
+                <Link
                   className="
                   block text-left text-lg font-bold
                   sm:mx-4 sm:py-2
@@ -84,14 +85,14 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
                   href={item.url}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
 
         <div className="hidden flex-row md:flex">
-          <a
+          <Link
             className="
           shadow bg-indigo-600 hover:bg-indigo-800 
           focus:shadow-outline focus:outline-none
@@ -99,7 +100,7 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
             href={heroEmail}
           >
             Hire Me
-          </a>
+          </Link>
         </div>
         <Switcher />
         <SlideOver>
@@ -112,7 +113,7 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
           >
             {navItems.map((item, index) => (
               <li key={`nav-bar-item-${index}`}>
-                <a
+                <Link
                   className="
                   block text-left text-lg font-bold
                   sm:mx-4 sm:py-2
@@ -124,7 +125,7 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
                   href={item.url}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

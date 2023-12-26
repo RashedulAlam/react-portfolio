@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export interface IHeroSummaryProps {
@@ -41,13 +42,16 @@ const HeroPrimaryContent = ({
             {name}
           </h1>
           <h2 className="text-sm text-center ">
-            {shortIntro}{" "}
-            <a
+            <span dangerouslySetInnerHTML={{ __html: shortIntro }}></span>
+            <Link
               href="/about"
-              className="hover:underline hover:underline-offset-2 text-indigo-600 font-semibold"
+              className="
+              hover:underline hover:underline-offset-2
+               text-indigo-600 font-semibold dark:text-indigo-300
+               "
             >
               {moreText}
-            </a>
+            </Link>
             .
           </h2>
           <a

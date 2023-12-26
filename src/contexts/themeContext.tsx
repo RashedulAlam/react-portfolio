@@ -10,6 +10,8 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
     typeof window !== "undefined" ? localStorage.theme : undefined
   );
 
+  const [loading, setLoading] = useState(true);
+
   const colorTheme = theme === "dark" ? "light" : "dark";
 
   useEffect(() => {
@@ -18,11 +20,12 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
     root.classList.add(theme);
 
     localStorage.setItem("theme", theme);
+    setLoading(false);
   }, [theme, colorTheme]);
 
   return (
     <ThemeContext.Provider value={[colorTheme, setTheme]}>
-      {theme && children}
+      {!loading && children}
     </ThemeContext.Provider>
   );
 };
