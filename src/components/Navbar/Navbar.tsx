@@ -44,7 +44,7 @@ const Navbar = ({ navItems = [], heroEmail }: INavbarProps) => {
             height={20}
             width={100}
             alt="logo"
-            className="object-fill"
+            className="object-fill dark:dark:bg-slate-200"
           />
         </Link>
 
