@@ -5,7 +5,7 @@ export const HERO_SUMMARY = {
   moreText: "(Read More)",
   cvUrl: "/artifacts/cv-rashedul-alam.pdf",
   cvDownloadLabel: "Download CV",
-  profilePicSrc: "/profile-pic-2.jpg",
+  profilePicSrc: "/profile-pic-2.png",
   email: "mailto:rashedulalam.iit.du@gmail.com",
   linkedInProfile: "https://www.linkedin.com/in/ralam0529/",
 };
