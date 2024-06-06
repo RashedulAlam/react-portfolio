@@ -4,7 +4,7 @@ import { ITimeline } from "@/components/common/Timeline";
 export const PROFILE: IProfileProps = {
   aboutMe: {
     photo: {
-      src: "/profile-pic-2.jpg",
+      src: "/profile-pic.jpg",
       alt: "profile-picture-of-rashedul-alam",
     },
     descriptions: [
