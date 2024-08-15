@@ -37,6 +37,17 @@ export const PROFILE: IProfileProps = {
   },
   workHistories: [
     {
+      title: "Project Worker",
+      period: "Jun, 2024 - Aug, 2024",
+      company: {
+        name: "Åbo Akademi University.",
+        website: "https://www.abo.fi/en/",
+        location: "Turku, Finland",
+        type: "Hybrid",
+        contract: "Part Time",
+      },
+    },
+    {
       title: "Senior Software Engineer",
       period: "Dec, 2021 - Nov 2023",
       company: {
