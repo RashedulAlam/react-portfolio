@@ -120,25 +120,5 @@ export const PROJECTS = [
     detailsDescription:
       "A web based application for buying and selling products among community members. The application is developed as a single page application. The members of the community can post items for sale and can buy items by communicating with the sellers. The community members can also recommend user to the system who are not community members. They can filter the items based on price, date, location, and category.",
     duration: "Jul 2016 - Dec 2016",
-  },
-  {
-    id: "7",
-    title: "Loence ERP",
-    description: "ERP Software",
-    techStack: ["NodeJs, Angular 2, MongoDB"],
-    roles: ["UI", "Lead Frontend", "Entrepreneurship"],
-    images: [
-      "/no-image-warning/client-site.png",
-      "/no-image-warning/client-site.png",
-      "/no-image-warning/client-site.png",
-    ],
-    client: "Aman & Sumon Plastic Company",
-    location: "Dhaka, Bangladesh",
-    notableContributions: [],
-    tags: ["Web Application"],
-    titleImage: "/no-image-warning/client-site.png",
-    detailsDescription:
-      "A web based small and custom ERP for plastic company. This ERP consists of different modules like customer management system, production management system, employee management system, asset management system, income and expense management system etc.",
-    duration: "Jan 2017 - Jun 2017",
-  },
+  }
 ];
